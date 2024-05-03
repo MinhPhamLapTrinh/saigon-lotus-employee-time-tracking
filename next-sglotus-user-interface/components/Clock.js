@@ -15,6 +15,7 @@ export default function Clock() {
   const hour = new Date(currDate).getHours();
   const minute = new Date(currDate).getMinutes();
   const date = new Date(currDate).toDateString();
+  
   return (
     <>
       <p className="text-1xl font-mono text-white font-bold">{date} </p>
