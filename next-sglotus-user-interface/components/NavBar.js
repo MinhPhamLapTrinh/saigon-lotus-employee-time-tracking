@@ -124,7 +124,7 @@ export default function NavBar() {
                           aria-orientation="vertical"
                           aria-labelledby="user-menu-button"
                         >
-                          <Link href="/" passHref legacyBehavior>
+                          <Link href="/login" passHref legacyBehavior>
                             <button
                               className="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
                               onClick={logout}
