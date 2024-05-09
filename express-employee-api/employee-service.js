@@ -92,9 +92,12 @@ export function checkOwner(ownerData) {
               reject("Incorrect password for user " + ownerData.username);
             }
           })
-          .catch(() => {
-            reject("Unable to find user " + ownerData.username);
+          .catch((err) => {
+            reject("Something wrong is happening!! ", err);
           });
+      })
+      .catch(() => {
+        reject("Unable to find user " + ownerData.username);
       });
   });
 }
